@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solihjon Abdulxoliq | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Solihjon Abdulxoliq</h1>
+        <h3>Frontend Developer<br>HTML, CSS, JavaScript</h3> 
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">☰</div>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Dark/Light Mode Toggle Button -->
+    <button class="mode-toggle" id="mode-toggle">Dark Mode</button>
+
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Frontend Developer | Passionate about coding and web design.</p>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p><strong>Name:</strong> Solihjon Abdulxoliq</p>
+        <p><strong>Birth Year & Place:</strong> 1974, Qashqadaryo, Uzbekistan</p>
+        <p><strong>Education:</strong> 
+            Physics and Mathematics Boarding School (Gold Medal), 
+            Medical University (Dentistry)
+        </p>
+        <p><strong>Current Activity:</strong> Learning Frontend Development and Transitioning into IT</p>
+        
+        <h3>Education & Professional Growth</h3>
+        <ul>
+            <li>Strong background in Physics, Mathematics, and Chemistry</li>
+            <li>Knowledge in Medicine and Biology</li>
+            <li>Completed Courses: Data Science, Artificial Intelligence, Python, Frontend (HTML, CSS, JavaScript, React)</li>
+        </ul>
+    
+        <h3>IT Projects & Experience</h3>
+        <ul>
+            <li><strong>Frontend Development:</strong>
+                <ul>
+                    <li>HTML, CSS, JavaScript fundamentals</li>
+                    <li>Creating personal website (Portfolio site)</li>
+                    <li>JavaScript projects (Interactive pages, mini-apps)</li>
+                    <li>Designing beautiful UI with CSS</li>
+                    <li>Starting with React</li>
+                </ul>
+            </li>
+            <li><strong>Python & Backend:</strong> Not started yet, planned for future</li>
+        </ul>
+    
+        <h3>Language Skills</h3>
+        <ul>
+            <li>English – Currently learning</li>
+            <li>Russian – Basic speaking and understanding</li>
+            <li>Uzbek – Native language</li>
+        </ul>
+    
+        <h3>Goals</h3>
+        <ul>
+            <li>Gain experience in Frontend and get a job</li>
+            <li>Learn Python and Django to become a Full-Stack Developer</li>
+            <li>Create an Uzbek-language programming learning platform</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            
+            <div class="project-card">
+                <img src="portfolio.png" alt="Portfolio Website">
+                <h3>Portfolio Website</h3>
+                <p>My personal portfolio website showcasing my skills and projects.</p>
+                <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn">GitHub</a>
+            </div>
+    
+            <div class="project-card">
+                <img src="todo-app.png" alt="To-Do App">
+                <h3>To-Do App</h3>
+                <p>A simple to-do list application to manage daily tasks.</p>
+                <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn">GitHub</a>
+            </div>
+    
+            <div class="project-card">
+                <img src="ecommerce.png" alt="E-Commerce Website">
+                <h3>E-Commerce Website</h3>
+                <p>A sample e-commerce website with a shopping cart feature.</p>
+                <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn">GitHub</a>
+            </div>
+    
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:tigrulhaq@gmail.com">tigrulhaq@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+998939017140">+998 93 901 71 40</a></p>
+                <p><strong>Telegram:</strong> <a href="https://t.me/koztigrkentavr" target="_blank">@koztigrkentavr</a></p>
+            </div>
+    
+            <form class="contact-form">
+                <h3>Send Me a Message</h3>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2025 Solihjon Abdulxoliq</p>
+    </footer>
+    <script>
+        // Mobil menyu tugmasiga bosilganda menyuni ochish/yopish
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
+        });
+        // Dark/Light Mode Toggle JavaScript
+const modeToggle = document.getElementById("mode-toggle");
+
+modeToggle.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+        modeToggle.textContent = "Light Mode";
+    } else {
+        modeToggle.textContent = "Dark Mode";
+    }
+});
+      </script>
+</body>
+</html>
